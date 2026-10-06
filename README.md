@@ -1,3 +1,6 @@
+> [!NOTE]
+> I don't work in .NET, and I am not familiar with the cove codebase. This is created with Cline using qwen3.8 and Claude Opus 5.5, supervised by me to make sure it doesn't do anything too stupid. Design decisions are mine.
+
 # HereSphere for Cove
 
 Watch your [Cove](https://github.com/yourcove/cove) library in **HereSphere** — on a Quest, a
