@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>HereSphereExtension</AssemblyName>
+    <RootNamespace>HereSphereExtension</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="extension.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Always" />
+    <None Include="ui.mjs" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="Always" />
+  </ItemGroup>
+
+  <!-- Package-based reference: used when building/packaging standalone (e.g. CI, publishing to a
+       Cove feed). Cove.Sdk's buildTransitive targets flow the host contracts to this project. -->
+  <ItemGroup Condition="'$(UseLocalCoveSdk)' == 'false'">
+    <PackageReference Include="Cove.Sdk" Version="$(CoveSdkVersion)" />
+  </ItemGroup>
+
+  <!-- Local project reference: used when building inside the monorepo next to a ../cove checkout.
+       The host resolves Cove.Sdk/Cove.Plugins/Cove.Core at runtime; we only need them at compile
+       time, so runtime assets are excluded from the output. -->
+  <ItemGroup Condition="'$(UseLocalCoveSdk)' == 'true' and Exists('$(MSBuildThisFileDirectory)..\..\..\cove\src\Cove.Sdk\Cove.Sdk.csproj')">
+    <ProjectReference Include="$(MSBuildThisFileDirectory)..\..\..\cove\src\Cove.Sdk\Cove.Sdk.csproj">
+      <Private>false</Private>
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </ProjectReference>
+  </ItemGroup>
+
+</Project>

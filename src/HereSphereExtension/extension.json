@@ -1,0 +1,16 @@
+{
+  "id": "com.cove.heresphere",
+  "name": "HereSphere",
+  "version": "0.6.0",
+  "description": "Exposes the Cove library to HereSphere v1 clients: catalog, per-video metadata, media streaming, Cove-matched thumbnails and previews, Cove-driven auth, per-user rating/favorite write-back, categorized tags (tags, groups, performers, studios, resolution tiers) in a configurable order, Cove segments as timeline markers, sidecar subtitles, static/dynamic group library sections, and a settings page with API token revocation.",
+  "author": "abla7e",
+  "url": "https://github.com/abla7e/com.cove.heresphere",
+  "categories": [
+    "media-player",
+    "integration"
+  ],
+  "minCoveVersion": "1.0.0",
+  "entryDll": "HereSphereExtension.dll",
+  "jsBundle": "ui.mjs",
+  "dependencies": {}
+}

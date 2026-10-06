@@ -1,0 +1,52 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "HereSphereExtension/1.0.0": {
+        "runtime": {
+          "HereSphereExtension.dll": {}
+        }
+      },
+      "Cove.Core/1.0.0": {
+        "runtime": {
+          "Cove.Core.dll": {
+            "assemblyVersion": "1.5.2.0",
+            "fileVersion": "1.5.2.0"
+          }
+        }
+      },
+      "Cove.Plugins/1.0.0": {
+        "dependencies": {
+          "Cove.Core": "1.0.0"
+        },
+        "runtime": {
+          "Cove.Plugins.dll": {
+            "assemblyVersion": "1.5.2.0",
+            "fileVersion": "1.5.2.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HereSphereExtension/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Cove.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Cove.Plugins/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

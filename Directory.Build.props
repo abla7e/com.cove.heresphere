@@ -1,0 +1,17 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+
+    <!-- NuGet version used when packaging for a Cove feed. -->
+    <CoveSdkVersion Condition="'$(CoveSdkVersion)' == ''">1.0.0</CoveSdkVersion>
+
+    <!-- When building inside the monorepo (a sibling ../cove checkout exists), reference the local
+         Cove.Sdk project directly so no published package is required. Standalone clones fall back
+         to the Cove.Sdk NuGet package. Override with -p:UseLocalCoveSdk=true|false. -->
+    <UseLocalCoveSdk Condition="'$(UseLocalCoveSdk)' == '' and Exists('$(MSBuildThisFileDirectory)..\cove\src\Cove.Sdk\Cove.Sdk.csproj')">true</UseLocalCoveSdk>
+    <UseLocalCoveSdk Condition="'$(UseLocalCoveSdk)' == ''">false</UseLocalCoveSdk>
+  </PropertyGroup>
+</Project>

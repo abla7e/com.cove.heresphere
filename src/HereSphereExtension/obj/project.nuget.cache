@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "xcApALKn2ec=",
+  "success": true,
+  "projectFilePath": "/home/anony/Documents/code/cove-dev/com.cove.heresphere/src/HereSphereExtension/HereSphereExtension.csproj",
+  "expectedPackageFiles": [
+    "/home/anony/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/home/anony/.nuget/packages/microsoft.entityframeworkcore/10.0.12/microsoft.entityframeworkcore.10.0.12.nupkg.sha512",
+    "/home/anony/.nuget/packages/microsoft.entityframeworkcore.abstractions/10.0.12/microsoft.entityframeworkcore.abstractions.10.0.12.nupkg.sha512",
+    "/home/anony/.nuget/packages/microsoft.entityframeworkcore.analyzers/10.0.12/microsoft.entityframeworkcore.analyzers.10.0.12.nupkg.sha512",
+    "/home/anony/.nuget/packages/microsoft.entityframeworkcore.relational/10.0.12/microsoft.entityframeworkcore.relational.10.0.12.nupkg.sha512",
+    "/home/anony/.nuget/packages/npgsql/8.0.5/npgsql.8.0.5.nupkg.sha512",
+    "/home/anony/.nuget/packages/pgvector/0.3.2/pgvector.0.3.2.nupkg.sha512",
+    "/home/anony/.nuget/packages/cove.core/1.0.0/cove.core.1.0.0.nupkg.sha512",
+    "/home/anony/.nuget/packages/cove.plugins/1.0.0/cove.plugins.1.0.0.nupkg.sha512",
+    "/home/anony/.nuget/packages/cove.sdk/1.0.0/cove.sdk.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

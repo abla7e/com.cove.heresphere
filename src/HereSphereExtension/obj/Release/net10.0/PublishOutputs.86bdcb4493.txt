@@ -1,0 +1,10 @@
+/home/anony/Documents/code/cove-dev/com.cove.heresphere/artifacts/extension/extension.json
+/home/anony/Documents/code/cove-dev/com.cove.heresphere/artifacts/extension/ui.mjs
+/home/anony/Documents/code/cove-dev/com.cove.heresphere/artifacts/extension/HereSphereExtension.dll
+/home/anony/Documents/code/cove-dev/com.cove.heresphere/artifacts/extension/HereSphereExtension.deps.json
+/home/anony/Documents/code/cove-dev/com.cove.heresphere/artifacts/extension/HereSphereExtension.runtimeconfig.json
+/home/anony/Documents/code/cove-dev/com.cove.heresphere/artifacts/extension/HereSphereExtension.pdb
+/home/anony/Documents/code/cove-dev/com.cove.heresphere/artifacts/extension/Cove.Core.dll
+/home/anony/Documents/code/cove-dev/com.cove.heresphere/artifacts/extension/Cove.Plugins.dll
+/home/anony/Documents/code/cove-dev/com.cove.heresphere/artifacts/extension/Cove.Core.pdb
+/home/anony/Documents/code/cove-dev/com.cove.heresphere/artifacts/extension/Cove.Plugins.pdb
